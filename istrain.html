@@ -1,0 +1,387 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>ISTrain � Engineering the Future of Rail</title>    <link rel="stylesheet" href="styles.css">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head><body><div id="cur"></div><div id="curR"></div><div class="mover" id="dmod"><div class="modal"><button class="mcl" id="mcl">&#x2715;</button><div id="mbody"></div></div></div><div class="mob-nav" id="mobnav"><button class="cx" id="cx">&#x2715;</button><a onclick="go('home')" data-en="Home" data-pt="Inicio">Home</a><a onclick="go('about')" data-en="About Us" data-pt="Sobre Nos">About Us</a><a onclick="go('locomotive')" data-en="Andorinha" data-pt="Andorinha">Andorinha</a><a onclick="go('sponsors')" data-en="Sponsors" data-pt="Patrocinadores">Sponsors</a><a onclick="go('imeche')" data-en="IMechE" data-pt="IMechE">IMechE</a><a onclick="go('join')" data-en="Join" data-pt="Juntar">Join</a><a onclick="go('news')" data-en="News" data-pt="Noticias">News</a><a onclick="go('merch')" data-en="Merchandise" data-pt="Merchandising">Merchandise</a><a onclick="go('contact')" data-en="Contact" data-pt="Contacto">Contact</a><button class="npt" id="mob-lang-btn" onclick="toggleLang()" style="margin-top:.5rem"> PT</button></div><nav id="nav"><div class="nlogo" onclick="go('home')"></div><ul class="nlinks"><li><a onclick="go('home')" data-p="home" data-en="Home" data-pt="Inicio">Home</a></li><li><a onclick="go('about')" data-p="about" data-en="About Us" data-pt="Sobre Nos">About Us</a></li><li><a onclick="go('locomotive')" data-p="locomotive" data-en="Andorinha" data-pt="Andorinha">Andorinha</a></li><li><a onclick="go('sponsors')" data-p="sponsors" data-en="Sponsors" data-pt="Patrocinadores">Sponsors</a></li><li><a onclick="go('imeche')" data-p="imeche" data-en="IMechE" data-pt="IMechE">IMechE</a></li><li><a onclick="go('join')" data-p="join" data-en="Join" data-pt="Juntar">Join</a></li><li><a onclick="go('news')" data-p="news" data-en="News" data-pt="Noticias">News</a></li><li><a onclick="go('merch')" data-p="merch" data-en="Merchandise" data-pt="Merchandising">Merchandise</a></li><li><a onclick="go('contact')" data-p="contact" data-en="Contact" data-pt="Contacto">Contact</a></li></ul><button class="npt" id="lang-btn" onclick="toggleLang()"> PT</button><div class="mob-btn" id="mbb"><span></span><span></span><span></span></div></nav><div class="page on" id="page-home"><div class="hero">
+  <div class="hvid"><video id="hvid" autoplay muted loop playsinline preload="auto"><source src="Home/Hero_Video_Train.mp4" type="video/mp4"></video></div>
+  <div class="hov"></div><div class="hgr"></div><div class="horb"></div>
+  <div class="hcp">
+    <h1 class="htit">Engineering<br>the <span class="b">Future</span><br><span class="o">of Rail</span></h1>
+    <p class="hsub" data-en="The first Portuguese student team competing in the IMechE Railway Challenge, designing, building and testing reduced-scale electric locomotives." data-pt="A primeira equipa portuguesa a competir no IMechE Railway Challenge, concebendo, construindo e testando locomotivas eletricas em escala reduzida.">The first Portuguese student team competing in the IMechE Railway Challenge, designing, building and testing reduced-scale electric locomotives.</p>
+    <div class="hbtns">
+      <button class="btn bs" onclick="go('locomotive')" data-en="Meet Andorinha &rarr;" data-pt="Conhecer Andorinha &rarr;">Meet Andorinha &#8594;</button>
+      <button class="btn bo" onclick="go('about')" data-en="Our Story" data-pt="A Nossa Historia">Our Story</button>
+    </div>
+  </div>
+  <div class="sci"><div class="scl"></div><span data-en="Scroll" data-pt="Rolar">Scroll</span></div>
+</div><div class="stb">
+  <div class="sti rv"><span class="stn">+30</span><span class="stl" data-en="Team Members" data-pt="Membros da Equipa">Team Members</span></div>
+  <div class="sti rv" style="transition-delay:.1s"><span class="stn">10&#188;"</span><span class="stl" data-en="Track Gauge" data-pt="Bitola">Track Gauge</span></div>
+  <div class="sti rv" style="transition-delay:.2s"><span class="stn">001</span><span class="stl" data-en="Locomotive" data-pt="Locomotiva">Locomotive</span></div>
+</div><div class="tl-wrap">
+  <div class="tl-header" data-en="2025/26 Season Progress" data-pt="Progresso da Epoca 2025/26">2025/26 Season Progress</div>
+  <div style="position:relative"><div class="tl-bar"><div class="tl-fill" id="tl-fill"></div><div class="tl-glow" id="tl-glow" style="left:0%"></div></div><div class="tl-dots" id="tl-dots"></div></div>
+  <div class="tl-milestones" id="tl-milestones"></div>
+</div><div style="height:1px;background:linear-gradient(90deg,transparent,rgba(60,133,197,.16),transparent)"></div><div class="sec" style="background:var(--dark)"><div class="g2">
+  <div class="rl">
+    <p class="ey" data-en="Who We Are" data-pt="Quem Somos">Who We Are</p>
+    <h2 class="h1" data-en="Student-built.<br><span class='b'>Rail-focused.</span>" data-pt="Construida por estudantes.<br><span class='b'>Foco ferroviario.</span>">Student-built.<br><span class="b">Rail-focused.</span></h2>
+    <p style="color:var(--off);font-weight:300;margin:1.4rem 0;text-align:justify" data-en="ISTrain is the first Portuguese student team dedicated to competing in the IMechE Railway Challenge. Founded in 2024 at IST, we design, build and test reduced-scale electric locomotives." data-pt="O ISTrain e a primeira equipa portuguesa dedicada ao IMechE Railway Challenge. Fundado em 2024 no IST, projetamos, construimos e testamos locomotivas eletricas em escala reduzida.">ISTrain is the first Portuguese student team dedicated to competing in the IMechE Railway Challenge. Founded in 2024 at IST, we design, build and test reduced-scale electric locomotives.</p>
+    <button class="btn bg" onclick="go('about')" data-en="Read our story &rarr;" data-pt="Ler a nossa historia &rarr;">Read our story &#8594;</button>
+  </div>
+  <div class="gcol rr">
+    <a class="card" onclick="go('imeche')"><span class="cico">&#127942;</span><div class="ct">IMechE Railway Challenge</div><p class="cd" data-en="The most prestigious student railway engineering competition in the UK." data-pt="A competicao de engenharia ferroviaria estudantil mais prestigiada do Reino Unido.">The most prestigious student railway engineering competition in the UK.</p></a>
+    <a class="card" onclick="go('locomotive')"><span class="cico">&#9889;</span><div class="ct" data-en="Alpha Trains European Railway Challenge" data-pt="Alpha Trains European Railway Challenge">Alpha Trains European Railway Challenge</div><p class="cd" data-en="The Alpha Trains European Railway Challenge is a European competition in Germany that challenges young talent to develop innovative solutions for the rail industry." data-pt="O Alpha Trains European Railway Challenge é uma competição europeia realizada na Alemanha que desafia jovens talentos a desenvolver soluções inovadoras para a indústria ferroviária.">The Alpha Trains European Railway Challenge is a European competition in Germany that challenges young talent to develop innovative solutions for the rail industry.</p></a>
+  </div>
+</div></div><div style="height:1px;background:linear-gradient(90deg,transparent,rgba(60,133,197,.16),transparent)"></div><div class="tkw"><div class="tki" id="tki"></div></div><div style="height:1px;background:linear-gradient(90deg,transparent,rgba(60,133,197,.16),transparent)"></div><div class="sec" style="background:var(--dark2)"><div class="g2">
+  <div class="rl">
+    <div class="loco-stage" style="height:320px">
+      <img src="Andorinha/Andorihna.png" alt="Meet Andorinha" style="width:100%;height:100%;object-fit:contain;background:#000;display:block">
+      <div class="lspecs"><span class="lspec">10&#188;" Gauge</span><span class="lspec">300 kg</span><span class="lspec">Full Electric</span></div>
+    </div>
+  </div>
+  <div class="rr">
+    <p class="ey" data-en="The Locomotive" data-pt="A Locomotiva">The Locomotive</p>
+    <h2 class="h1">Meet <span class="b">Andorinha</span></h2>
+    <p style="color:var(--off);font-weight:300;margin:1.2rem 0;text-align:justify" data-en="Introduction of the first prototype 19 September 2025. A reduced-scale electric locomotive built entirely by students, competing at IMechE 2026." data-pt="Apresentada a 19 de setembro de 2025. Uma locomotiva eletrica em escala reduzida construida por estudantes.">Introduction of the first prototype 19 September 2025. A reduced-scale electric locomotive built entirely by students, competing at IMechE 2026.</p>
+    <div class="spg">
+      <div class="spb"><span class="spv">10&#188;"</span><span class="spl" data-en="Track Gauge" data-pt="Bitola">Track Gauge</span></div>
+      <div class="spb"><span class="spv">EV</span><span class="spl" data-en="Powertrain" data-pt="Tracao">Powertrain</span></div>
+      <div class="spb"><span class="spv">300 kg</span><span class="spl" data-en="Vehicle Mass" data-pt="Massa">Vehicle Mass</span></div>
+      <div class="spb"><span class="spv">Jun 2026</span><span class="spl" data-en="Competition" data-pt="Competicao">Competition</span></div>
+    </div>
+    <button class="btn bs" onclick="go('locomotive')" style="margin-top:1.4rem" data-en="Full Details &rarr;" data-pt="Ver Detalhes &rarr;">Full Details &#8594;</button>
+  </div>
+</div></div><div style="height:1px;background:linear-gradient(90deg,transparent,rgba(60,133,197,.16),transparent)"></div>
+<div class="sec" style="background:var(--dark)">
+  <div class="rv" style="text-align:center;margin-bottom:2.5rem">
+    <p class="ey" style="justify-content:center" data-en="The Team" data-pt="A Equipa">The Team</p>
+    <h2 class="h1" data-en="The People <span class='b'>Behind the Machine</span>" data-pt="As Pessoas <span class='b'>Por Tras da Maquina</span>">The People <span class="b">Behind the Machine</span></h2>
+  </div>
+  <div class="pf rv" style="height:500px;cursor:pointer;border:1px solid rgba(60,133,197,.1)" onclick="go('about')"><img src="Home/Team Picture.jpg" alt="ISTrain 25/26 Team"><div class="pcap" data-en="ISTrain 25/26 Team &middot; IST Lisboa &middot; Click to meet the team" data-pt="Equipa ISTrain 25/26 &middot; IST Lisboa &middot; Clique para conhecer a equipa">ISTrain 25/26 Team &middot; IST Lisboa &middot; Click to meet the team</div>
+  </div>
+</div><div style="height:1px;background:linear-gradient(90deg,transparent,rgba(60,133,197,.16),transparent)"></div><div class="spsec"><div class="rv" style="margin-bottom:2.5rem"><p class="ey" data-en="Partners" data-pt="Parceiros">Partners</p><h2 class="h1">Our <span class="b" data-en="Sponsors" data-pt="Patrocinadores">Sponsors</span></h2></div><div class="tr rv" style="transition-delay:0s">
+  <div class="trh"><span class="tp tppt">&#10022; Platinum</span><div class="tlx tlpt"></div></div>
+  <div class="sp-row"><a href="https://www.mobility.siemens.com/global/en.html" target="_blank" class="sp-item pt-sz hpt"><img src="Sponsors/Siemens.png" alt="Siemens"></a></div>
+</div><div class="tr rv" style="transition-delay:0.08s">
+  <div class="trh"><span class="tp tpfo">&#9672; Founding</span><div class="tlx tlfo"></div></div>
+  <div class="sp-row"><a href="https://pt.ferrovia.pt/" target="_blank" class="sp-item fo-sz hfo"><img src="Sponsors/PFP.png" alt="PFP"></a><a href="https://www.idmec.tecnico.ulisboa.pt/" target="_blank" class="sp-item fo-sz hfo idmec-logo"><img src="Sponsors/Idmec.png" alt="IDMEC"></a></div>
+</div><div class="tr rv" style="transition-delay:0.16s">
+  <div class="trh"><span class="tp tpgo">&#9670; Gold</span><div class="tlx tlgo"></div></div>
+  <div class="sp-row"><a href="https://www.cp.pt/info/en/institutional/" target="_blank" class="sp-item go-sz hgo"><img src="Sponsors/CP.png" alt="CP"></a><a href="https://www.4x4mt.pt/" target="_blank" class="sp-item go-sz hgo"><img src="Sponsors/4x4 Multitrabalhos.png" alt="4x4 Multitrabalhos"></a></div>
+</div><div class="tr rv" style="transition-delay:0.24s">
+  <div class="trh"><span class="tp tpsi">&#9658; Silver</span><div class="tlx tlsi"></div></div>
+  <div class="sp-row"><a href="https://www.mcg.pt/" target="_blank" class="sp-item si-sz hsi"><img src="Sponsors/MCG.png" alt="MCG"></a><a href="https://www.cadflow.pt/" target="_blank" class="sp-item si-sz hsi"><img src="Sponsors/Cadlow.png" alt="Cadflow"></a><a href="https://mauser.pt/" target="_blank" class="sp-item si-sz hsi mauser-logo"><img src="Sponsors/Mauser.webp" alt="Mauser"></a><a href="https://www.coficab.pt/" target="_blank" class="sp-item si-sz hsi"><img src="Sponsors/Coficab.png" alt="Coficab"></a></div>
+</div><div class="tr rv" style="transition-delay:0.32s">
+  <div class="trh"><span class="tp tpin">&#9632; Institutional</span><div class="tlx tlin"></div></div>
+  <div class="sp-row"><a href="https://aeist.pt/" target="_blank" class="sp-item in-sz hin"><img src="Sponsors/Aeist.svg" alt="AEIST"></a><a href="https://www.santander.pt/" target="_blank" class="sp-item in-sz hin"><img src="Sponsors/Santander.jpg" alt="Santander"></a><a href="https://www.cgd.pt/Particulares/Pages/Particulares_v2.aspx" target="_blank" class="sp-item in-sz hin"><img src="Sponsors/Caixa.jpg" alt="Caixa Geral de Depositos"></a></div>
+</div><div class="bsb rv"><div><h3 data-en="Become a Sponsor" data-pt="Torne-se Patrocinador">Become a Sponsor</h3><p data-en="Connect your brand with the future of railway engineering in Portugal." data-pt="Associe a sua marca ao futuro da engenharia ferroviaria em Portugal.">Connect your brand with the future of railway engineering in Portugal.</p></div><button class="btn bs" onclick="go('contact')" data-en="Get In Touch &rarr;" data-pt="Contactar &rarr;">Get In Touch &#8594;</button></div></div><div style="height:1px;background:linear-gradient(90deg,transparent,rgba(60,133,197,.16),transparent)"></div>
+<div class="sec" style="background:var(--dark2)"><div class="g2t">
+  <div class="rl">
+    <p class="ey" data-en="Contact" data-pt="Contacto">Contact</p>
+    <h2 class="h1" data-en="Get in <span class='b'>Touch</span>" data-pt="Entre em <span class='b'>Contacto</span>">Get in <span class="b">Touch</span></h2>
+    <p style="color:var(--off);font-weight:300;margin:1.2rem 0 1.8rem;text-align:justify" data-en="Join our team, partner with us, or learn more about what we are building." data-pt="Junte-se a nos, seja nosso parceiro ou saiba mais sobre o que estamos a construir.">Join our team, partner with us, or learn more about what we are building.</p>
+    <a href="mailto:istrain@tecnico.ulisboa.pt" class="clink"><span class="clico" style="color:var(--bl)">&#9993;</span><span>istrain@tecnico.ulisboa.pt</span></a>
+    <div class="clink" style="cursor:default"><span class="clico"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3C85C5" stroke-width="2"><circle cx="12" cy="10" r="3"/><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg></span><span>Av. Rovisco Pais 1, 1049-001 Lisboa</span></div>
+    <a href="https://www.instagram.com/istrain_lisboa/" target="_blank" class="clink"><span class="clico"><i class="fa-brands fa-instagram"></i></span><span>@istrain_lisboa</span></a>
+    <a href="https://www.linkedin.com/company/lxtrain/" target="_blank" class="clink"><span class="clico"><i class="fa-brands fa-linkedin"></i></span><span>linkedin.com/company/IStrain</span></a>
+  </div>
+  <!-- Forms removed: contact page only shows static contact info -->
+</div></div></div><div class="page" id="page-about">
+  <div class="pb"><div class="pbg"></div><p class="pbl" data-en="Who We Are" data-pt="Quem Somos">Who We Are</p><h1 data-en="About <span>ISTrain</span>" data-pt="Sobre o <span>ISTrain</span>">About <span>ISTrain</span></h1><div class="pbl2"></div></div>
+  <div class="sec" style="background:var(--dark)"><div class="g2">
+    <div class="rl">
+      <p class="ey" data-en="Our Mission" data-pt="A Nossa Missao">Our Mission</p>
+      <h2 class="h1" style="margin-bottom:1.3rem" data-en="The First Portuguese<br><span class='b'>Railway Engineering Team</span>" data-pt="A Primeira Equipa Portuguesa<br><span class='b'>de Engenharia Ferroviaria</span>">The First Portuguese<br><span class="b">Railway Engineering Team</span></h2>
+      <p style="color:var(--off);font-weight:300;margin-bottom:1rem;text-align:justify" data-en="ISTrain is a railway engineering student team from Instituto Superior Tecnico. Founded in 2024, we are the first Portuguese student team competing in the IMechE Railway Challenge." data-pt="O ISTrain e uma equipa de estudantes de engenharia ferroviaria do Instituto Superior Tecnico. Fundado em 2024, somos a primeira equipa portuguesa a competir no IMechE Railway Challenge.">ISTrain is a railway engineering student team from Instituto Superior Tecnico. Founded in 2024, we are the first Portuguese student team competing in the IMechE Railway Challenge.</p>
+      <p style="color:var(--off);font-weight:300;text-align:justify" data-en="Our mission is to design, build, test, and compete with an innovative reduced-scale locomotive, advancing railway technology through engineering and multidisciplinary collaboration." data-pt="A nossa missao e projetar, construir, testar e competir com uma locomotiva inovadora, avancando a tecnologia ferroviaria atraves da engenharia e colaboracao multidisciplinar.">Our mission is to design, build, test, and compete with an innovative reduced-scale locomotive, advancing railway technology through engineering and multidisciplinary collaboration.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin-top:2rem">
+        <div class="vb"><div class="vbt" data-en="Innovation" data-pt="Inovacao">Innovation</div><p class="vbd" data-en="Pushing boundaries in railway engineering." data-pt="A ultrapassar os limites da engenharia ferroviaria.">Pushing boundaries in railway engineering.</p></div>
+        <div class="vb"><div class="vbt" data-en="Sustainability" data-pt="Sustentabilidade">Sustainability</div><p class="vbd" data-en="Fully electric, zero emissions." data-pt="Totalmente eletrica, zero emissoes.">Fully electric, zero emissions.</p></div>
+        <div class="vb"><div class="vbt" data-en="Excellence" data-pt="Excelencia">Excellence</div><p class="vbd" data-en="Highest standards in engineering quality." data-pt="Os mais altos padroes de qualidade.">Highest standards in engineering quality.</p></div>
+        <div class="vb"><div class="vbt" data-en="Collaboration" data-pt="Colaboracao">Collaboration</div><p class="vbd" data-en="Multidisciplinary team, one goal." data-pt="Equipa multidisciplinar, um objetivo.">Multidisciplinary team, one goal.</p></div>
+      </div>
+    </div>
+    <div class="rr"><div class="pf" style="height:480px;border:1px solid rgba(60,133,197,.1)"><img src="About us/Team Picture.jpg" alt="ISTrain 25/26 Team" style="width:100%;height:100%;object-fit:cover;display:block"><div class="pcap">ISTrain 25/26 Team &middot; IST Lisboa</div></div></div>
+  </div></div>
+  <div style="height:1px;background:linear-gradient(90deg,transparent,rgba(60,133,197,.16),transparent)"></div>
+  <div class="sec" style="background:var(--dark2)"><div style="max-width:760px;margin:0 auto"><div class="rv">
+    <p class="ey" data-en="History" data-pt="Historia">History</p>
+    <h2 class="h1" style="margin-bottom:1.4rem" data-en="How It All <span class='b'>Began</span>" data-pt="Como Tudo <span class='b'>Comecou</span>">How It All <span class="b">Began</span></h2>
+    <p style="color:var(--off);font-weight:300;margin-bottom:1rem;text-align:justify" data-en="ISTrain was born from the initiative of a small group of students encouraged by Professor Hugo Magalhaes. With no existing railway-focused student group in Portugal, ISTrain began from scratch, driven by enthusiasm and the desire to represent the country on an international stage." data-pt="O ISTrain nasceu da iniciativa de um pequeno grupo de estudantes incentivados pelo Professor Hugo Magalhaes. Sem nenhum grupo estudantil ferroviario em Portugal, o ISTrain comecou do zero.">ISTrain was born from the initiative of a small group of students encouraged by Professor Hugo Magalhaes. With no existing railway-focused student group in Portugal, ISTrain began from scratch, driven by enthusiasm and the desire to represent the country on an international stage.</p>
+    <p style="color:var(--off);font-weight:300;text-align:justify" data-en="Since its founding in December 2024, the team has united more than 30 students from multiple backgrounds with one shared goal: Andorinha." data-pt="Desde a sua fundacao em dezembro de 2024, a equipa reuniu mais de 30 estudantes de varias areas com um objetivo comum: a Andorinha.">Since its founding in December 2024, the team has united more than 30 students from multiple backgrounds with one shared goal: Andorinha.</p>
+  </div></div></div>
+  <div style="height:1px;background:linear-gradient(90deg,transparent,rgba(60,133,197,.16),transparent)"></div>
+  <div class="sec" style="background:var(--dark)">
+    <div class="rv" style="margin-bottom:2rem"><p class="ey" data-en="Our Teams" data-pt="As Nossas Equipas">Our Teams</p><h2 class="h1" data-en="Season <span class='b'>Teams</span>" data-pt="Equipas por <span class='b'>Epoca</span>">Season <span class="b">Teams</span></h2></div>
+    <div class="team-tabs rv" style="transition-delay:.1s">
+      <button class="team-tab" id="tab-board" onclick="showTeam('board')" data-en="Board" data-pt="Direcao">Board</button>
+      <button class="team-tab on" id="tab-2526" onclick="showTeam('2526')" data-en="25/26 Team" data-pt="Equipa 25/26">25/26 Team</button>
+      <button class="team-tab" id="tab-2425" onclick="showTeam('2425')" data-en="24/25 Team" data-pt="Equipa 24/25">24/25 Team</button>
+    </div>
+    <div class="team-panel" id="panel-board">
+      <div style="margin-bottom:2rem">
+        <div class="pf" style="height:400px;border:1px solid rgba(60,133,197,.1);margin-bottom:2rem"><img src="About us/Board.jpg" alt="ISTrain Board" style="width:100%;height:100%;object-fit:cover;display:block"><div class="pcap" data-en="ISTrain Board &middot; IST Lisboa" data-pt="Direcao ISTrain &middot; IST Lisboa">ISTrain Board &middot; IST Lisboa</div></div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2rem">
+          <div style="background:var(--dark2);border:1px solid rgba(60,133,197,.16);border-radius:var(--r);padding:1.8rem;border-top:3px solid var(--bl)">
+            <div style="font-family:'Bebas Neue',sans-serif;font-size:1.6rem;color:var(--white);margin-bottom:.2rem">Aliya Ibrahimo</div>
+            <div style="font-family:'Space Mono',monospace;font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;color:var(--bl)" data-en="President" data-pt="Presidente">President</div>
+          </div>
+          <div style="background:var(--dark2);border:1px solid rgba(60,133,197,.16);border-radius:var(--r);padding:1.8rem;border-top:3px solid var(--bl)">
+            <div style="font-family:'Bebas Neue',sans-serif;font-size:1.6rem;color:var(--white);margin-bottom:.2rem">Miguel Meninas</div>
+            <div style="font-family:'Space Mono',monospace;font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;color:var(--bl)" data-en="Technical Director" data-pt="Diretor Tecnico">Technical Director</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="team-panel on" id="panel-2526">
+      <p style="color:var(--grey);font-size:.9rem;line-height:1.8;margin-bottom:2rem;text-align:justify" data-en="Click any department to meet the current 25/26 team." data-pt="Clique em qualquer departamento para conhecer a equipa 25/26.">Click any department to meet the current 25/26 team.</p>
+      <div class="g3" id="dg"></div>
+    </div>
+    <div class="team-panel" id="panel-2425">
+      <div class="pf" style="height:480px;border:1px solid rgba(60,133,197,.1)"><img src="About us/24_25 Team Picture.jpg" alt="ISTrain 24/25 Team" style="width:100%;height:100%;object-fit:cover;display:block"><div class="pcap">ISTrain 24/25 Team &middot; Design Freeze, September 2025</div></div>
+    </div>
+
+  </div>
+</div><div class="page" id="page-locomotive">
+  <div class="loco-hero">
+    <div style="position:absolute;inset:0">
+      <video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;opacity:.46"><source src="Andorinha/Hero_Video_Train.mp4" type="video/mp4"></video>
+      <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(6,9,15,1) 0%,rgba(6,9,15,.48) 48%,rgba(6,9,15,.1) 100%)"></div>
+    </div>
+    <div class="loco-hero-content">
+      <p class="ey" data-en="Locomotive 001" data-pt="Locomotiva 001">Locomotive 001</p>
+      <div class="loco-hero-title">Meet <span class="b">Andorinha</span></div>
+      <div class="loco-hero-sub" data-en="IST Lisboa &middot; Introduction of the first prototype 19 Sep 2025 &middot; IMechE Competition June 2026" data-pt="IST Lisboa &middot; Apresentada 19 Set 2025 &middot; Competicao IMechE Junho 2026">IST Lisboa &middot; Introduction of the first prototype 19 Sep 2025 &middot; IMechE Competition June 2026</div>
+    </div>
+  </div>
+  <div style="height:1px;background:linear-gradient(90deg,transparent,rgba(60,133,197,.16),transparent)"></div>
+  <!-- Model viewer -->
+  <div class="loco-viewer-wrap">
+
+    <div class="loco-hud-wrap">
+      <div class="loco-hud loco-hud-tl"><div class="loco-hud-dot" style="color:#5ba3e0;background:#5ba3e0"></div><div class="loco-hud-line" style="color:#5ba3e0"></div><div class="loco-hud-tag">10&#188;" Gauge Track</div></div>
+      <div class="loco-hud loco-hud-tr"><div class="loco-hud-tag">Full Electric EV</div><div class="loco-hud-line" style="color:#c9a84c"></div><div class="loco-hud-dot" style="color:#c9a84c;background:#c9a84c"></div></div>
+      <div class="loco-hud loco-hud-bl"><div class="loco-hud-dot" style="color:#7ecba1;background:#7ecba1"></div><div class="loco-hud-line" style="color:#7ecba1"></div><div class="loco-hud-tag">300 kg Vehicle Mass</div></div>
+      <div class="loco-hud loco-hud-br"><div class="loco-hud-tag">Fail-Safe Operation</div><div class="loco-hud-line" style="color:#e07a5f"></div><div class="loco-hud-dot" style="color:#e07a5f;background:#e07a5f"></div></div>
+    </div>
+  </div>
+  <!-- Name + story -->
+  <div class="sec" style="background:var(--dark)"><div class="g2">
+    <div class="rl">
+      <p class="ey" data-en="The Name" data-pt="O Nome">The Name</p>
+      <h2 class="h1" style="margin-bottom:1.3rem"><span class="b">Andorinha</span></h2>
+      <p style="color:var(--off);font-weight:300;margin-bottom:1rem;text-align:justify" data-en="When the Portuguese railway network began taking shape in the mid-19th century, Andorinha became a symbol of speed and national pride. Named after the swift swallow, it reflected the spirit of innovation of Portugal's early railway engineers." data-pt="Quando a rede ferroviaria portuguesa comecou a tomar forma, a Andorinha tornou-se simbolo de velocidade e orgulho nacional.">When the Portuguese railway network began taking shape in the mid-19th century, Andorinha became a symbol of speed and national pride. Named after the swift swallow, it reflected the spirit of innovation of Portugal's early railway engineers.</p>
+      <p style="color:var(--off);font-weight:300;text-align:justify" data-en="Today, ISTrain carries that spirit forward. A reduced-scale electric locomotive built entirely by students, from concept sketch to competition platform." data-pt="Hoje, o ISTrain transporta esse espirito para o futuro. Uma locomotiva eletrica em escala reduzida construida inteiramente por estudantes.">Today, ISTrain carries that spirit forward. A reduced-scale electric locomotive built entirely by students, from concept sketch to competition platform.</p>
+    </div>
+    <div class="rr">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:.9rem">
+        <div class="vb" style="border-top-color:#5ba3e0"><div class="vbt" style="color:#5ba3e0">10&#188;"</div><p class="vbd" data-en="Track Gauge" data-pt="Bitola">Track Gauge</p></div>
+        <div class="vb" style="border-top-color:#c9a84c"><div class="vbt" style="color:#c9a84c">EV</div><p class="vbd" data-en="Powertrain" data-pt="Tracao">Powertrain</p></div>
+        <div class="vb" style="border-top-color:#7ecba1"><div class="vbt" style="color:#7ecba1">300 kg</div><p class="vbd" data-en="Vehicle Mass" data-pt="Massa">Vehicle Mass</p></div>
+        <div class="vb" style="border-top-color:#e07a5f"><div class="vbt" style="color:#e07a5f">Jun 2026</div><p class="vbd" data-en="Competition" data-pt="Competicao">Competition</p></div>
+      </div>
+    </div>
+  </div></div>
+  <div style="height:1px;background:linear-gradient(90deg,transparent,rgba(60,133,197,.16),transparent)"></div>
+  <!-- Characteristics -->
+  <div class="sec" style="background:var(--dark2)">
+    <div class="rv" style="margin-bottom:2.2rem"><p class="ey" data-en="Engineering" data-pt="Engenharia">Engineering</p><h2 class="h1" data-en="Key <span class='b'>Characteristics</span>" data-pt="Caracteristicas <span class='b'>Principais</span>">Key <span class="b">Characteristics</span></h2></div>
+    <div class="loco-chars-grid rv" style="transition-delay:.1s">
+      <div class="loco-char-card" style="--ci:#5ba3e0"><div class="lcc-num">01</div><div class="lcc-icon">&#127939;</div><div class="lcc-title" data-en="Iberian First" data-pt="Primeiro Iberico">Iberian First</div><div class="lcc-body" data-en="First reduced-scale railway locomotive developed in the Iberian Peninsula, where every decision is made by human engineers." data-pt="Primeira locomotiva em escala reduzida desenvolvida na Peninsula Iberica, onde cada decisao e tomada por engenheiros humanos.">First reduced-scale railway locomotive developed in the Iberian Peninsula, where every decision is made by human engineers.</div></div>
+      <div class="loco-char-card" style="--ci:#c9a84c"><div class="lcc-num">02</div><div class="lcc-icon">&#127788;</div><div class="lcc-title" data-en="Aerodynamics" data-pt="Aerodinamica">Aerodynamics</div><div class="lcc-body" data-en="Aerodynamically optimised bodyshell designed for high airflow efficiency and structural performance under competition loading." data-pt="Carroceria aerodinamicamente otimizada para alta eficiencia de fluxo de ar e desempenho estrutural.">Aerodynamically optimised bodyshell designed for high airflow efficiency and structural performance under competition loading.</div></div>
+      <div class="loco-char-card" style="--ci:#7ecba1"><div class="lcc-num">03</div><div class="lcc-icon">&#9889;</div><div class="lcc-title" data-en="Electric Drive" data-pt="Tracao Eletrica">Electric Drive</div><div class="lcc-body" data-en="Full electric drivetrain targeting strong traction performance and energy efficiency, evaluated by the IMechE jury across multiple categories." data-pt="Tracao totalmente eletrica visando forte desempenho e eficiencia energetica, avaliada pelo juri IMechE.">Full electric drivetrain targeting strong traction performance and energy efficiency, evaluated by the IMechE jury across multiple categories.</div></div>
+      <div class="loco-char-card" style="--ci:#e07a5f"><div class="lcc-num">04</div><div class="lcc-icon">&#128200;</div><div class="lcc-title" data-en="Spec Compliant" data-pt="Conforme Especificacao">Spec Compliant</div><div class="lcc-body" data-en="10&#188;-inch gauge platform fully compliant with IMechE Railway Challenge technical specification and safety requirements." data-pt="Plataforma de bitola 10&#188; polegadas em total conformidade com a especificacao tecnica do IMechE Railway Challenge.">10&#188;-inch gauge platform fully compliant with IMechE Railway Challenge technical specification and safety requirements.</div></div>
+      <div class="loco-char-card" style="--ci:#b48ead"><div class="lcc-num">05</div><div class="lcc-icon">&#127891;</div><div class="lcc-title" data-en="Student-Built" data-pt="Construida por Estudantes">Student-Built</div><div class="lcc-body" data-en="Designed, manufactured and tested entirely by IST students, from concept sketch to live competition evaluation." data-pt="Projetada, fabricada e testada inteiramente por estudantes do IST, do esquisso a avaliacao na competicao.">Designed, manufactured and tested entirely by IST students, from concept sketch to live competition evaluation.</div></div>
+    </div>
+  </div>
+</div><div class="page" id="page-sponsors">
+  <div class="pb" style="position:relative;padding:0;min-height:52vh;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden">
+    <div class="pbg"></div>
+    <div style="position:absolute;inset:0;overflow:hidden"><div style="position:absolute;inset:0;background:linear-gradient(to top,var(--black) 0%,rgba(6,9,15,.6) 60%,transparent 100%)"></div></div>
+    <div style="position:relative;z-index:1;padding:3rem 5rem 3.5rem"><p class="pbl" data-en="Partners" data-pt="Parceiros">Partners</p><h1 data-en="Our <span>Sponsors</span>" data-pt="Os Nossos <span>Patrocinadores</span>">Our <span>Sponsors</span></h1></div>
+    <div class="pbl2"></div>
+  </div>
+  <div class="spsec">
+    <p class="rv" style="color:var(--off);font-weight:300;margin-bottom:3.5rem;text-align:justify" data-en="Every great journey starts with strong partnerships. ISTrain is powered by forward-thinking organisations that share our belief in rail as the future of sustainable transport." data-pt="Toda a grande jornada comeca com parcerias solidas. O ISTrain e impulsionado por organizacoes que partilham a nossa crenca no caminho-de-ferro como futuro do transporte sustentavel.">Every great journey starts with strong partnerships. ISTrain is powered by forward-thinking organisations that share our belief in rail as the future of sustainable transport.</p>
+    <div class="tr rv" style="transition-delay:0s">
+  <div class="trh"><span class="tp tppt">&#10022; Platinum</span><div class="tlx tlpt"></div></div>
+  <div class="sp-row"><a href="https://www.mobility.siemens.com/global/en.html" target="_blank" class="sp-item pt-sz hpt"><img src="Sponsors/Siemens.png" alt="Siemens"></a></div>
+</div><div class="tr rv" style="transition-delay:0.08s">
+  <div class="trh"><span class="tp tpfo">&#9672; Founding</span><div class="tlx tlfo"></div></div>
+  <div class="sp-row"><a href="https://pt.ferrovia.pt/" target="_blank" class="sp-item fo-sz hfo"><img src="Sponsors/PFP.png" alt="PFP"></a><a href="https://www.idmec.tecnico.ulisboa.pt/" target="_blank" class="sp-item fo-sz hfo idmec-logo"><img src="Sponsors/Idmec.png" alt="IDMEC"></a></div>
+</div><div class="tr rv" style="transition-delay:0.16s">
+  <div class="trh"><span class="tp tpgo">&#9670; Gold</span><div class="tlx tlgo"></div></div>
+  <div class="sp-row"><a href="https://www.cp.pt/info/en/institutional/" target="_blank" class="sp-item go-sz hgo"><img src="Sponsors/CP.png" alt="CP"></a><a href="https://www.4x4mt.pt/" target="_blank" class="sp-item go-sz hgo"><img src="Sponsors/4x4 Multitrabalhos.png" alt="4x4 Multitrabalhos"></a></div>
+</div><div class="tr rv" style="transition-delay:0.24s">
+  <div class="trh"><span class="tp tpsi">&#9658; Silver</span><div class="tlx tlsi"></div></div>
+  <div class="sp-row"><a href="https://www.mcg.pt/" target="_blank" class="sp-item si-sz hsi"><img src="Sponsors/MCG.png" alt="MCG"></a><a href="https://www.cadflow.pt/" target="_blank" class="sp-item si-sz hsi"><img src="Sponsors/Cadlow.png" alt="Cadflow"></a><a href="https://mauser.pt/" target="_blank" class="sp-item si-sz hsi mauser-logo"><img src="Sponsors/Mauser.webp" alt="Mauser"></a><a href="https://www.coficab.pt/" target="_blank" class="sp-item si-sz hsi"><img src="Sponsors/Coficab.png" alt="Coficab"></a></div>
+</div><div class="tr rv" style="transition-delay:0.32s">
+  <div class="trh"><span class="tp tpin">&#9632; Institutional</span><div class="tlx tlin"></div></div>
+  <div class="sp-row"><a href="https://aeist.pt/" target="_blank" class="sp-item in-sz hin"><img src="Sponsors/Aeist.svg" alt="AEIST"></a><a href="https://www.santander.pt/" target="_blank" class="sp-item in-sz hin"><img src="Sponsors/Santander.jpg" alt="Santander"></a><a href="https://www.cgd.pt/Particulares/Pages/Particulares_v2.aspx" target="_blank" class="sp-item in-sz hin"><img src="Sponsors/Caixa.jpg" alt="Caixa Geral de Depositos"></a></div>
+</div>
+    <div class="bsb rv"><div><h3 data-en="Become a Sponsor" data-pt="Torne-se Patrocinador">Become a Sponsor</h3><p data-en="Connect your brand with the future of railway engineering in Portugal and beyond." data-pt="Associe a sua marca ao futuro da engenharia ferroviaria em Portugal e alem-fronteiras.">Connect your brand with the future of railway engineering in Portugal and beyond.</p></div><button class="btn bs" onclick="go('contact')" data-en="Get In Touch &rarr;" data-pt="Contactar &rarr;">Get In Touch &#8594;</button></div>
+  </div>
+</div><div class="page" id="page-imeche">
+  <div class="pb" style="padding:0;min-height:62vh;display:flex;flex-direction:column;justify-content:flex-end">
+    <div class="pbg"></div>
+    <div style="position:absolute;inset:0;overflow:hidden"><video autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;opacity:.32"><source src="IMechE Railway/IMechE Railway Hero Video.mp4" type="video/mp4"></video><div style="position:absolute;inset:0;background:linear-gradient(to top,var(--black) 0%,rgba(6,9,15,.55) 55%,transparent 100%)"></div></div>
+    <div style="position:relative;z-index:1;padding-bottom:3.5rem;padding-left:5rem"><p class="pbl" data-en="The Competition" data-pt="A Competicao">The Competition</p><h1 data-en="IMechE <span>Railway</span><br>Challenge" data-pt="IMechE <span>Railway</span><br>Challenge">IMechE <span>Railway</span><br>Challenge</h1></div>
+    <div class="pbl2"></div>
+  </div>
+  <div class="sec" style="background:var(--dark);padding-bottom:3rem">
+    <div class="rv" style="text-align:center;margin-bottom:1.4rem">
+      <p class="ey" style="justify-content:center">Time Remaining</p>
+      <h2 class="h1" data-en="Competition <span class='b'>Countdown</span>" data-pt="Contagem Regressiva <span class='b'>da Competicao</span>">Competition <span class="b">Countdown</span></h2>
+      <p style="color:var(--grey);font-size:.9rem;margin-top:.5rem">24 June 2026 &middot; Stapleford Miniature Railway, UK</p>
+    </div>
+    <div class="cdown rv" style="transition-delay:.1s">
+      <div class="cdb"><span class="cnum" id="cdd">000</span><span class="clbl" data-en="Days" data-pt="Dias">Days</span></div>
+      <div class="cdb"><span class="cnum" id="cdh">00</span><span class="clbl" data-en="Hours" data-pt="Horas">Hours</span></div>
+      <div class="cdb"><span class="cnum" id="cdm">00</span><span class="clbl" data-en="Minutes" data-pt="Minutos">Minutes</span></div>
+      <div class="cdb"><span class="cnum" id="cds">00</span><span class="clbl" data-en="Seconds" data-pt="Segundos">Seconds</span></div>
+    </div>
+  </div>
+  <div style="height:1px;background:linear-gradient(90deg,transparent,rgba(60,133,197,.16),transparent)"></div>
+  <div class="sec" style="background:var(--dark2)"><div class="g2t">
+    <div class="rl">
+      <p class="ey" data-en="About the Challenge" data-pt="Sobre o Desafio">About the Challenge</p>
+      <h2 class="h1" style="margin-bottom:1.2rem" data-en="What is <span class='b'>IMechE?</span>" data-pt="O que e o <span class='b'>IMechE?</span>">What is <span class="b">IMechE?</span></h2>
+      <p style="color:var(--off);font-weight:300;margin-bottom:1rem;text-align:justify" data-en="The IMechE Railway Challenge is organised by the Institution of Mechanical Engineers one of the most demanding student engineering competitions in the railway sector." data-pt="O IMechE Railway Challenge e organizado pela Institution of Mechanical Engineers � uma das competicoes de engenharia estudantil mais exigentes do setor ferroviario.">The IMechE Railway Challenge is organised by the Institution of Mechanical Engineers � one of the most demanding student engineering competitions in the railway sector.</p>
+      <p style="color:var(--off);font-weight:300;text-align:justify" data-en="Teams design, manufacture and demonstrate a 10&#188;-inch gauge reduced-scale locomotive, evaluated by an expert jury across multiple categories." data-pt="As equipas projetam, fabricam e demonstram uma locomotiva em escala reduzida, avaliada por um juri de especialistas.">Teams design, manufacture and demonstrate a 10&#188;-inch gauge reduced-scale locomotive, evaluated by an expert jury across multiple categories.</p>
+      <div style="margin-top:1.5rem;padding:1.2rem 1.4rem;border:1px solid rgba(60,133,197,.16);background:rgba(60,133,197,.04);border-radius:var(--r)">
+        <p style="font-family:Space Mono,monospace;font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;color:var(--bl);margin-bottom:.35rem" data-en="A National First" data-pt="Uma Primeira Nacional">A National First</p>
+        <p style="color:var(--off);font-size:.9rem;line-height:1.65;text-align:justify" data-en="ISTrain is the first Portuguese university team ever to enter the IMechE Railway Challenge." data-pt="O ISTrain e a primeira equipa universitaria portuguesa a participar no IMechE Railway Challenge.">ISTrain is the first Portuguese university team ever to enter the IMechE Railway Challenge.</p>
+      </div>
+    </div>
+    <div class="rr">
+      <p class="ey" data-en="Scoring Categories" data-pt="Categorias de Pontuacao">Scoring Categories</p>
+      <h2 class="h1" style="margin-bottom:1.2rem" data-en="How We Are <span class='b'>Evaluated</span>" data-pt="Como Somos <span class='b'>Avaliados</span>">How We Are <span class="b">Evaluated</span></h2>
+      <div class="scoring-tabs">
+        <div class="stab-nav">
+          <button class="stab-btn on" onclick="showScoring('perf')" id="stab-perf">Performance</button>
+          <button class="stab-btn" onclick="showScoring('eng')" id="stab-eng">Engineering</button>
+          <button class="stab-btn" onclick="showScoring('doc')" id="stab-doc">Design &amp; Docs</button>
+        </div>
+        <div class="stab-panel on" id="sp-perf">
+          <div class="score-card-grid">
+            <div class="score-card" style="--sc:#3C85C5"><div class="sc-code">C1</div><div class="sc-name">Auto-Stop</div><div class="sc-pts">300</div><div class="sc-bar"><div class="sc-fill" style="width:100%"></div></div><div class="sc-desc">Automatic emergency stopping system tested on the live track.</div></div>
+            <div class="score-card" style="--sc:#3C85C5"><div class="sc-code">C2</div><div class="sc-name">Ride Comfort</div><div class="sc-pts">300</div><div class="sc-bar"><div class="sc-fill" style="width:100%"></div></div><div class="sc-desc">Vibration, noise and passenger experience during operation.</div></div>
+            <div class="score-card" style="--sc:#3C85C5"><div class="sc-code">C3</div><div class="sc-name">Energy Storage</div><div class="sc-pts">300</div><div class="sc-bar"><div class="sc-fill" style="width:100%"></div></div><div class="sc-desc">Battery system design, energy density and charge management.</div></div>
+            <div class="score-card" style="--sc:#3C85C5"><div class="sc-code">C4</div><div class="sc-name">Traction</div><div class="sc-pts">300</div><div class="sc-bar"><div class="sc-fill" style="width:100%"></div></div><div class="sc-desc">Pulling force, acceleration and maximum speed on the test track.</div></div>
+            <div class="score-card" style="--sc:#5ba3e0"><div class="sc-code">C5</div><div class="sc-name">Reliability</div><div class="sc-pts">250</div><div class="sc-bar"><div class="sc-fill" style="width:83%"></div></div><div class="sc-desc">Starting score with deductions for each engineering challenge failure.</div></div>
+          </div>
+        </div>
+        <div class="stab-panel" id="sp-eng">
+          <div class="score-card-grid">
+            <div class="score-card" style="--sc:#c9a84c"><div class="sc-code">C6</div><div class="sc-name">Maintainability</div><div class="sc-pts">300</div><div class="sc-bar"><div class="sc-fill" style="width:100%"></div></div><div class="sc-desc">Ease of component access, repair and maintenance during operation.</div></div>
+            <div class="score-card" style="--sc:#c9a84c"><div class="sc-code">C7</div><div class="sc-name">Autocoupler</div><div class="sc-pts">150</div><div class="sc-bar"><div class="sc-fill" style="width:50%"></div></div><div class="sc-desc">Automatic coupling mechanism design and live demonstration.</div></div>
+            <div class="score-card" style="--sc:#c9a84c"><div class="sc-code">C8</div><div class="sc-name">Aerodynamic Drag</div><div class="sc-pts">150</div><div class="sc-bar"><div class="sc-fill" style="width:50%"></div></div><div class="sc-desc">Drag coefficient measurement and aerodynamic optimisation evidence.</div></div>
+            <div class="score-card" style="--sc:#c9a84c"><div class="sc-code">C9</div><div class="sc-name">Ride-on Loco</div><div class="sc-pts">250</div><div class="sc-bar"><div class="sc-fill" style="width:83%"></div></div><div class="sc-desc">Carrying a passenger on a reduced-scale seating arrangement.</div></div>
+            <div class="score-card" style="--sc:#b8943a"><div class="sc-code">C10</div><div class="sc-name">Location Announce</div><div class="sc-pts">150</div><div class="sc-bar"><div class="sc-fill" style="width:50%"></div></div><div class="sc-desc">Automated announcements of station locations during operation.</div></div>
+            <div class="score-card" style="--sc:#b8943a"><div class="sc-code">C11</div><div class="sc-name">Remote Data</div><div class="sc-pts">60</div><div class="sc-bar"><div class="sc-fill" style="width:20%"></div></div><div class="sc-desc">Live telemetry streaming speed, current and system status remotely.</div></div>
+          </div>
+        </div>
+        <div class="stab-panel" id="sp-doc">
+          <div class="score-card-grid">
+            <div class="score-card" style="--sc:#8a9aaa"><div class="sc-code">C12</div><div class="sc-name">Design Challenge</div><div class="sc-pts">scaled</div><div class="sc-bar"><div class="sc-fill" style="width:70%"></div></div><div class="sc-desc">Technical design documentation benchmarked against best team.</div></div>
+            <div class="score-card" style="--sc:#8a9aaa"><div class="sc-code">C13</div><div class="sc-name">CAD Entry</div><div class="sc-pts">scaled</div><div class="sc-bar"><div class="sc-fill" style="width:60%"></div></div><div class="sc-desc">3D CAD model quality, completeness and engineering accuracy.</div></div>
+            <div class="score-card" style="--sc:#8a9aaa"><div class="sc-code">C14</div><div class="sc-name">Business Case</div><div class="sc-pts">scaled</div><div class="sc-bar"><div class="sc-fill" style="width:65%"></div></div><div class="sc-desc">Commercial viability analysis and professional team presentation.</div></div>
+            <div class="score-card" style="--sc:#8a9aaa"><div class="sc-code">C15</div><div class="sc-name">Aesthetic &amp; Poster</div><div class="sc-pts">scaled</div><div class="sc-bar"><div class="sc-fill" style="width:55%"></div></div><div class="sc-desc">Visual identity, livery design and competition poster quality.</div></div>
+            <div class="score-card" style="--sc:#8a9aaa"><div class="sc-code">C16</div><div class="sc-name">Innovation</div><div class="sc-pts">scaled</div><div class="sc-bar"><div class="sc-fill" style="width:80%"></div></div><div class="sc-desc">Novel engineering approaches and creative solutions beyond the brief.</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div></div>
+</div><div class="page" id="page-join">
+  <div class="pb"><div class="pbg"></div><p class="pbl" data-en="Join the Team" data-pt="Juntar a Equipa">Join the Team</p><h1 data-en="Join <span>ISTrain</span>" data-pt="Juntar-se ao <span>ISTrain</span>">Join <span>ISTrain</span></h1><div class="pbl2"></div></div>
+  <div class="sec" style="background:var(--dark)">
+    <p class="rv" style="color:var(--off);font-weight:300;margin-bottom:3.5rem;text-align:justify" data-en=" We are looking for students passionate about railway engineering, innovation, and sustainable mobility. Joining means hands-on projects, cross-disciplinary collaboration, and contributing to a locomotive evaluated on an international stage." data-pt="Procuramos estudantes do IST apaixonados pela engenharia ferroviaria, inovacao e mobilidade sustentavel. Juntar-se significa projetos praticos, colaboracao multidisciplinar e contribuir para uma locomotiva avaliada num palco internacional.">We are looking for IST students passionate about railway engineering, innovation, and sustainable mobility. Joining means hands-on projects, cross-disciplinary collaboration, and contributing to a locomotive evaluated on an international stage.</p>
+    <div class="g3" id="jdg" style="margin-bottom:3.5rem"></div>
+    <div style="border:1px solid rgba(60,133,197,.16);padding:3rem;background:linear-gradient(135deg,rgba(30,74,114,.18),transparent);border-radius:var(--r)">
+      <h3 style="font-family:Bebas Neue,sans-serif;font-size:2rem;margin-bottom:1.4rem" data-en="Apply to Join ISTrain" data-pt="Candidatura ao ISTrain">Apply to Join ISTrain</h3>
+      <div class="g2t">
+        <div class="rl">
+          <p style="color:var(--off);font-weight:300;line-height:1.8;text-align:justify;margin-bottom:1.5rem" data-en="Applications are announced on our social media — reach out via email or social channels." data-pt="As candidaturas sao anunciadas nas nossas redes sociais — contacte-nos por email ou nas redes sociais.">Applications are announced on our social media — reach out via email or social channels.</p>
+          <a href="https://www.instagram.com/istrain_lisboa/" target="_blank" class="btn bs" data-en="Follow on Instagram" data-pt="Seguir no Instagram">Follow on Instagram</a>
+        </div>
+        <!-- Application form removed: users should follow social channels or email to apply -->
+      </div>
+    </div>
+  </div>
+</div><div class="page" id="page-news">
+  <div class="pb"><div class="pbg"></div><p class="pbl" data-en="Latest" data-pt="Recentes">Latest</p><h1 data-en="News &amp; <span>Updates</span>" data-pt="Noticias e <span>Atualizacoes</span>">News &amp; <span>Updates</span></h1><div class="pbl2"></div></div>
+  <div class="sec" style="background:var(--dark)">
+    <div class="rv" style="margin-bottom:.5rem"><p class="ey" data-en="Press Coverage" data-pt="Cobertura de Imprensa">Press Coverage</p><h2 class="h1" style="margin-bottom:1.8rem" data-en="In the <span class='b'>News</span>" data-pt="Na <span class='b'>Imprensa</span>">In the <span class="b">News</span></h2></div>
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-bottom:5rem">
+      <div class="nc rv">
+        <div class="ni"><img src="News/News_1.jpg" alt="ISTrain Andorinha launch news" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+        <div class="nb">
+          <div class="nd">22 September 2025</div>
+          <div class="nt" data-en="ISTrain launches the Andorinha reduced-scale electric locomotive" data-pt="O ISTrain lanca a locomotiva eletrica Andorinha em escala reduzida">ISTrain launches the Andorinha reduced-scale electric locomotive</div>
+          <p class="ne" data-en="ISTrain unveiled Andorinha, Loco 001 at IST on 19 September 2025. The reduced-scale electric locomotive competes at the IMechE Railway Challenge in June 2026." data-pt="O ISTrain apresentou a Andorinha, Loco 001 no IST a 19 de setembro de 2025.">ISTrain unveiled Andorinha, Loco 001 at IST on 19 September 2025. The reduced-scale electric locomotive competes at the IMechE Railway Challenge in June 2026.</p>
+          <a href="https://tecnico.ulisboa.pt/en/news/campus-community/istrain-launches-the-andorinha-electric-locomotive-for-international-competition/" target="_blank" class="nlink">Read Full Article &#8594;</a>
+        </div>
+      </div>
+      <div class="nc rv" style="transition-delay:.1s">
+        <div class="ni"><img src="News/News_2.jpg" alt="ISTrain student group news" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+        <div class="nb">
+          <div class="nd">7 May 2025</div>
+          <div class="nt" data-en="New student group aims to bring Tecnico closer to rail" data-pt="Novo grupo estudantil aproxima o Tecnico ao setor ferroviario">New student group aims to bring Tecnico closer to rail</div>
+          <p class="ne" data-en="A new student group at IST challenges students to innovate in rail transportation. ISTrain is born, dedicated to the IMechE Railway Challenge." data-pt="Um novo grupo estudantil no IST desafia os estudantes a inovar no transporte ferroviario.">A new student group at IST challenges students to innovate in rail transportation. ISTrain is born, dedicated to the IMechE Railway Challenge.</p>
+          <a href="https://tecnico.ulisboa.pt/en/news/campus-community/new-students-organisation-aims-to-bring-tecnico-closer-to-the-railway-sector-and-challenges-students-to-innovate-in-rail-transportation/" target="_blank" class="nlink">Read Full Article &#8594;</a>
+        </div>
+      </div>
+    </div>
+    <!-- Updates -->
+    <div class="rv"><p class="ey" data-en="Team Activity" data-pt="Atividade da Equipa">Team Activity</p><h2 class="h1" style="margin-bottom:1.8rem" data-en="Monthly <span class='b'>Updates</span>" data-pt="Atualizacoes <span class='b'>Mensais</span>">Monthly <span class="b">Updates</span></h2></div>
+    <div class="rv" style="transition-delay:.1s">
+      <div class="upd-dept-block">
+        <div class="upd-dept-header"><div class="upd-dept-icon" style="background:var(--bl)"></div><div class="upd-dept-name" data-en="General" data-pt="Geral">General</div></div>
+        <div class="upd-items">
+          <div class="upd-row"><span class="upd-month-col">21 Mar 2026</span><span class="upd-text-col" data-en="Design Sprint at IST" data-pt="Design Sprint no IST">Design Sprint at IST</span></div>
+          <div class="upd-row"><span class="upd-month-col">28 Feb 2026</span><span class="upd-text-col" data-en="Design Sprint at IST" data-pt="Design Sprint no IST">Design Sprint at IST</span></div>
+          <div class="upd-row"><span class="upd-month-col">16 Jan 2026</span><span class="upd-text-col" data-en="Team excursion to CP � visiting the CP workshop at Entroncamento and meeting railway engineers." data-pt="Excursao da equipa a CP � visita a oficina de CP em Entroncamento e encontro com engenheiros ferroviarios.">Team excursion to CP � visiting the CP workshop at Entroncamento and meeting railway engineers.</span></div>
+        </div>
+      </div>
+      <div class="upd-dept-block">
+        <div class="upd-dept-header"><div class="upd-dept-icon" style="background:#b48ead"></div><div class="upd-dept-name" data-en="Marketing, Operations &amp; Logistics" data-pt="Marketing, Operacoes e Logistica">Marketing, Operations &amp; Logistics</div></div>
+        <div class="upd-items">
+          <div class="upd-row"><span class="upd-month-col">Feb 2026</span><span class="upd-text-col" data-en="Released new ISTrain stickers, distributed to team members and at networking events at IST Lisboa." data-pt="Lancamento de novos autocolantes ISTrain, distribuidos aos membros da equipa e em eventos no IST Lisboa.">Released new ISTrain stickers, distributed to team members and at networking events at IST Lisboa.</span></div>
+        </div>
+      </div>
+      <div class="upd-dept-block"><div class="upd-dept-header"><div class="upd-dept-icon" style="background:#5ba3e0"></div><div class="upd-dept-name" data-en="Structures &amp; Aerodynamics" data-pt="Estruturas e Aerodinamica">Structures &amp; Aerodynamics</div></div><div class="upd-items" style="padding:.3rem 0"></div></div>
+      <div class="upd-dept-block"><div class="upd-dept-header"><div class="upd-dept-icon" style="background:#c9a84c"></div><div class="upd-dept-name" data-en="Powertrain &amp; Energy Systems" data-pt="Propulsao e Sistemas de Energia">Powertrain &amp; Energy Systems</div></div><div class="upd-items" style="padding:.3rem 0"></div></div>
+      <div class="upd-dept-block"><div class="upd-dept-header"><div class="upd-dept-icon" style="background:#7ecba1"></div><div class="upd-dept-name" data-en="Vehicle Dynamics" data-pt="Dinamica do Veiculo">Vehicle Dynamics</div></div><div class="upd-items" style="padding:.3rem 0"></div></div>
+      <div class="upd-dept-block"><div class="upd-dept-header"><div class="upd-dept-icon" style="background:#e07a5f"></div><div class="upd-dept-name" data-en="Electronics &amp; Software" data-pt="Electronica e Software">Electronics &amp; Software</div></div><div class="upd-items" style="padding:.3rem 0"></div></div>
+    </div>
+  </div>
+</div><div class="page" id="page-merch">
+  <div class="pb"><div class="pbg"></div><p class="pbl" data-en="Official Store" data-pt="Loja Oficial">Official Store</p><h1 data-en="ISTrain <span>Merchandise</span>" data-pt="ISTrain <span>Merchandising</span>">ISTrain <span>Merchandise</span></h1><div class="pbl2"></div></div>
+  <div class="sec" style="background:var(--dark)">
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:2rem">
+      <div class="mc rv">
+        <div class="mi"><img src="Merchandise/Polo's.png" alt="ISTrain Polo" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+        <div class="mb"><div class="mn" data-en="ISTrain Polo" data-pt="Polo ISTrain">ISTrain Polo</div><p class="md" data-en="Black polo shirt with blue cuffs, featuring sponsor logos on the back." data-pt="Polo preto com punhos azuis, com logos dos patrocinadores nas costas.">Black polo shirt with blue cuffs, featuring sponsor logos on the back.</p><div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem"><span style="font-family:Space Mono,monospace;font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--grey)" data-en="Order via Contact" data-pt="Encomendar via Contacto">Order via Contact</span><button class="btn bs" onclick="go('contact')" data-en="Order &rarr;" data-pt="Encomendar &rarr;">Order &#8594;</button></div></div>
+      </div>
+      <div class="mc rv" style="transition-delay:.1s">
+        <div class="mi"><img src="Merchandise/Quarter Zipper.png" alt="ISTrain Quarter Zip" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+        <div class="mb"><div class="mn" data-en="ISTrain Quarter Zip" data-pt="Quarter Zip ISTrain">ISTrain Quarter Zip</div><p class="md" data-en="Clean black quarter zip with team branding and sponsor logos." data-pt="Quarter zip preto com branding da equipa e logos dos patrocinadores.">Clean black quarter zip with team branding and sponsor logos.</p><div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem"><span style="font-family:Space Mono,monospace;font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--grey)" data-en="Order via Contact" data-pt="Encomendar via Contacto">Order via Contact</span><button class="btn bs" onclick="go('contact')" data-en="Order &rarr;" data-pt="Encomendar &rarr;">Order &#8594;</button></div></div>
+      </div>
+    </div>
+  </div>
+</div><div class="page" id="page-contact">
+  <div class="pb"><div class="pbg"></div><p class="pbl" data-en="Reach Out" data-pt="Contactar">Reach Out</p><h1 data-en="Get in <span>Touch</span>" data-pt="Entre em <span>Contacto</span>">Get in <span>Touch</span></h1><div class="pbl2"></div></div>
+  <div class="sec" style="background:var(--dark)">
+    <!-- 3 info cards -->
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-bottom:3.5rem" class="rv">
+      <div class="cic-card"><div class="cic-icon">&#9993;</div><div class="cic-label" data-en="Email" data-pt="Email">Email</div>istrain@tecnico.ulisboa.pt</div>
+      <div class="cic-card"><div class="cic-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="10" r="3"/><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg></div><div class="cic-label" data-en="Address" data-pt="Morada">Address</div><span class="cic-value" style="font-size:.84rem">Av. Rovisco Pais 1<br>1049-001 Lisboa, Portugal</span></div>
+      <div class="cic-card"><div class="cic-icon">&#128279;</div><div class="cic-label" data-en="Social Media" data-pt="Redes Sociais">Social Media</div><div style="display:flex;gap:.7rem;margin-top:.5rem;justify-content:center"><a href="https://www.instagram.com/istrain_lisboa/" target="_blank" class="fsoc"><i class="fa-brands fa-instagram"></i></a><a href="https://www.linkedin.com/company/lxtrain/" target="_blank" class="fsoc"><i class="fa-brands fa-linkedin"></i></a></div></div>
+    </div>
+  </div>
+</div><footer><div class="fi"><div style="cursor:pointer" onclick="go('home')"></div><div class="fn"><a onclick="go('home')" data-en="Home" data-pt="Inicio">Home</a><a onclick="go('about')" data-en="About Us" data-pt="Sobre Nos">About Us</a><a onclick="go('locomotive')" data-en="Andorinha" data-pt="Andorinha">Andorinha</a><a onclick="go('sponsors')" data-en="Sponsors" data-pt="Patrocinadores">Sponsors</a><a onclick="go('imeche')" data-en="IMechE" data-pt="IMechE">IMechE</a><a onclick="go('join')" data-en="Join" data-pt="Juntar">Join</a><a onclick="go('news')" data-en="News" data-pt="Noticias">News</a><a onclick="go('merch')" data-en="Merchandise" data-pt="Merchandising">Merchandise</a><a onclick="go('contact')" data-en="Contact" data-pt="Contacto">Contact</a></div><div style="display:flex;gap:.65rem;align-items:center"><a href="https://www.instagram.com/istrain_lisboa/" target="_blank" class="fsoc"><i class="fa-brands fa-instagram"></i></a><a href="https://www.linkedin.com/company/lxtrain/" target="_blank" class="fsoc"><i class="fa-brands fa-linkedin"></i></a><button class="fpt" id="foot-lang-btn" onclick="toggleLang()"> PT</button></div></div><p class="fcp">&#169; 2025 ISTrain &middot; Instituto Superior Tecnico &middot; Av. Rovisco Pais 1, 1049-001 Lisboa, Portugal</p></footer><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>    <script src="scripts.js"></script>
+</body></html>
+
+
+
+
+
