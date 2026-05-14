@@ -147,6 +147,19 @@ nav.sc{background:rgba(6,9,15,.95);backdrop-filter:blur(24px);border-bottom:1px 
 .hin:hover{box-shadow:0 0 0 3px rgba(126,203,161,.55),0 6px 18px rgba(126,203,161,.22);border-color:var(--inst);}
 .bsb{border:1px solid rgba(60,133,197,.16);padding:2.8rem 3rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap;margin-top:2.5rem;background:var(--dark2);border-radius:var(--r);}
 .bsb h3{font-family:"Bebas Neue",sans-serif;font-size:2.1rem;}.bsb p{color:var(--grey);font-size:.9rem;margin-top:.3rem;}
+/* Forceert witte achtergrond voor specifieke logo's */
+a.sp-item.mauser-logo,
+a.sp-item.idmec-logo {
+    background-color: #ffffff !important;
+    opacity: 1 !important; /* Zorgt dat het logo niet vervaagt */
+}
+
+/* Houdt de achtergrond wit tijdens de hover-animatie */
+a.sp-item.mauser-logo:hover,
+a.sp-item.idmec-logo:hover {
+    background-color: #ffffff !important;
+    background: #ffffff !important;
+}
 /* DEPT CARDS */
 .dc{background:var(--dark2);border:1px solid rgba(255,255,255,.05);padding:2rem;cursor:pointer;transition:all .4s;position:relative;overflow:hidden;border-radius:var(--r);}
 .dc::after{content:"";position:absolute;bottom:0;left:0;right:0;height:2px;transform:scaleX(0);transition:transform .4s;transform-origin:left;border-radius:0 0 var(--r) var(--r);}
