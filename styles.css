@@ -346,3 +346,31 @@ footer{background:var(--black);padding:2.5rem 5rem;border-top:1px solid rgba(255
 /* Transparent background logos show on dark */
 .sp-item.idmec-logo, .sp-item.mauser-logo { background: var(--dark2) !important; border-color: rgba(255,255,255,.15) !important; }
 .sp-item.idmec-logo:hover, .sp-item.mauser-logo:hover { background: var(--dark3) !important; }
+/* ISTrain Nav Bar Customizations */
+
+.nlogo img {
+    height: 60px !important; 
+}
+
+.nlinks li a {
+    color: #ffffff !important;
+}
+
+#lang-btn, #mob-lang-btn {
+    color: #ffffff !important;
+    border: 1px solid #ffffff;
+    background: transparent;
+}
+/* Removes the border line and leaves only the white text */
+#lang-btn, #mob-lang-btn {
+    color: #ffffff !important;
+    border: none !important;      /* Removes the outline/lining */
+    background: transparent !important; /* Ensures no background color shows */
+    outline: none !important;     /* Removes any default browser focus lines */
+    padding: 0;                   /* Removes extra spacing around the text */
+    cursor: pointer;
+}
+#lang-btn:hover, #mob-lang-btn:hover {
+    opacity: 0.7; /* Fades the white text slightly on hover */
+    transition: opacity 0.2s ease;
+}
