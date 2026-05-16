@@ -129,6 +129,9 @@ nav.sc{background:rgba(6,9,15,.95);backdrop-filter:blur(24px);border-bottom:1px 
 
 /* Center sponsor rows on the Sponsors page */
 #page-sponsors .sp-row{justify-content:center;}
+
+/* Center sponsor rows on the Home page */
+#page-home .sp-row{justify-content:center;}
 .sp-item{background:#fff;display:flex;align-items:center;justify-content:center;text-decoration:none;border-radius:16px;border:2px solid rgba(200,200,200,.3);transition:transform .25s,box-shadow .25s,border-color .25s;flex-shrink:0;overflow:hidden;}
 .sp-item:hover{transform:scale(1.05);z-index:2;}
 .sp-item img{object-fit:contain;display:block;width:100%;height:100%;}
